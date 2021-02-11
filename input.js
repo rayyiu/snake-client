@@ -24,6 +24,8 @@ const setupInput = function(conn) {
         }else if (input === '\u0073'){
             console.log("move down")
             conn.write("Move: down")
+        }else if (input === "\u0066"){
+            conn.write("Say: Pay Respects")
         }
     }
     const stdin = process.stdin;
